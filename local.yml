@@ -34,6 +34,6 @@
     copy:
       src: files/bashrc
       dest: /home/pi/.bashrc
-      owner: arnt
-      group: arnt
+      owner: pi
+      group: pi
 
