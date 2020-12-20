@@ -24,6 +24,12 @@
       key: "/org/gnome/desktop/background/picture-uri"
       value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
+- name: set wallpaper mate ver2
+    become_user: pi
+    dconf:
+      key: "/org/mate/desktop/background/picture-uri"
+      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
+
   - name: set wallpaper mate
     become_user: pi
     dconf:
