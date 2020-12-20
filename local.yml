@@ -28,13 +28,13 @@
     become_user: pi
     dconf:
       key: "/org/mate/desktop/background/picture-uri"
-      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
+      value: "'file:///usr/share/backgrounds/arctica-greeter.png'"
 
   - name: set wallpaper mate
     become_user: pi
     dconf:
       key: "/org/mate/desktop/background/picture-filename"
-      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
+      value: "'file:///usr/share/backgrounds/arctica-greeter.png'"
 
   - name: set wallpaper position
     become_user: pi
