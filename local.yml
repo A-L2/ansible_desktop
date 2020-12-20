@@ -18,10 +18,16 @@
       owner: root
       group: root
 
-  - name: set wallpaper
+  - name: set wallpaper gnome
     become_user: pi
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
+      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
+
+  - name: set wallpaper mate
+    become_user: pi
+    dconf:
+      key: "/org/mate/desktop/background/picture-filename"
       value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
   - name: set wallpaper position
